@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <meta name="theme-color" content="#050815" />
+  <title>星海能量场 · 沉浸式互动实验</title>
+  <script type="module" crossorigin src="./assets/app.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style.css">
+</head>
+<body>
+  <main id="stage">
+    <canvas id="world"></canvas>
+    <video id="camera" autoplay playsinline muted></video>
+
+    <header>
+      <div class="brand"><i></i><span>ASTRAL FIELD</span><b>IMMERSIVE 02</b></div>
+      <div id="systemState" class="system-state"><i></i><span>等待进入</span></div>
+    </header>
+
+    <section id="welcome" class="welcome">
+      <p class="kicker">REAL-TIME HUMAN · ENVIRONMENT FUSION</p>
+      <h1>进入<br><em>星海能量场</em></h1>
+      <p class="desc">你的身体将直接进入虚拟空间。让双手出现在镜头中，用动作唤醒周围的光与能量。</p>
+      <button id="enter"><span>进入场景</span><b>→</b></button>
+      <p class="local">本地实时计算 · 摄像头影像不会上传</p>
+      <p id="error" class="error"></p>
+    </section>
+
+    <aside id="gestures" class="gestures hidden">
+      <div><b>01</b><span>移动手掌</span><small>牵引能量</small></div>
+      <div><b>02</b><span>捏合 · 松开</span><small>蓄力释放</small></div>
+      <div><b>03</b><span>张开手掌</span><small>空间冲击波</small></div>
+    </aside>
+
+    <div id="calibration" class="calibration"><i></i><span>正在感知空间</span></div>
+    <div id="eventText" class="event-text"></div>
+    <button id="hideUI" class="hide-ui" title="隐藏界面">◎</button>
+    <div class="frame tl"></div><div class="frame tr"></div><div class="frame bl"></div><div class="frame br"></div>
+  </main>
+</body>
+</html>
